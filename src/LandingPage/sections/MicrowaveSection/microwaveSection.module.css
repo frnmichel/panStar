@@ -1,0 +1,91 @@
+.spaceBackground {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.spaceBackground--02 {
+  mix-blend-mode: exclusion;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 100%;
+  max-width: 85%;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container p {
+  font-size: 'DINOT-Cond';
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 4rem;
+  max-width: 30%;
+  margin: 0 auto;
+  line-height: 1;
+  text-shadow: 0 0px 60px black;
+}
+
+.microwaveContainer img {
+  max-width: 50%;
+}
+
+.fridgeContainer {
+  flex-direction: row-reverse;
+}
+
+.fridgeContainer p {
+  max-width: 40%;
+}
+
+.fridgeContainer img {
+  max-width: 45%;
+  margin-top: 10%;
+}
+
+.detailsContainer p {
+  margin-left: 8%;
+}
+
+.detailsContainer img {
+  max-width: 100%;
+  margin-left: -31%;
+}
+
+.endingContainer p {
+  max-width: 96%;
+  text-align: center;
+}
+
+@media screen and (min-width: 3000px) {
+  .container p {
+    font-size: 9rem;
+  }
+
+  .endingContainer {
+    max-width: 96%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .container p {
+    font-size: 3rem;
+  }
+  .detailsContainer p {
+    margin-left: 4%;
+  }
+
+  .endingContainer {
+    max-width: 96%;
+  }
+}

@@ -1,0 +1,124 @@
+.headingContainer {
+  position: absolute;
+  top: 27%;
+  left: 2.5%;
+  z-index: 1;
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.headingContainer > div {
+  font-family: 'Dinot';
+  font-weight: lighter;
+}
+
+.headingContainer h2 {
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.headingContainer h2 span {
+  color: black;
+  text-shadow: rgb(255, 255, 255) 1px 0px 0px,
+    rgb(255, 255, 255) 0.540302px 0.841471px 0px,
+    rgb(255, 255, 255) -0.416147px 0.909297px 0px,
+    rgb(255, 255, 255) -0.989992px 0.14112px 0px,
+    rgb(255, 255, 255) -0.653644px -0.756802px 0px,
+    rgb(255, 255, 255) 0.283662px -0.958924px 0px,
+    rgb(255, 255, 255) 0.96017px -0.279415px 0px;
+}
+
+.descriptionContainer {
+  position: absolute;
+  left: 2.5%;
+  bottom: 6.5%;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.thirdSection__bg {
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.darthVaderContainer {
+  position: absolute;
+  height: 100%;
+  object-fit: contain;
+  top: 0;
+  right: 0;
+}
+
+.lightSaberContainer {
+  display: block;
+  position: absolute;
+  bottom: 35%;
+  left: 102.75%;
+  transform: rotate(40.5deg);
+  height: 800px;
+  width: 11px;
+}
+
+.lightSaberContainer__light {
+  position: absolute;
+  bottom: -170px;
+  left: 0;
+  background: linear-gradient(to top, transparent, red, transparent);
+  width: 11px;
+  height: 20%;
+  z-index: 2;
+}
+
+.lightSaberContainer__light__rays {
+  position: absolute;
+  bottom: -170px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to top, transparent, red, transparent);
+  width: 50px;
+  height: 20%;
+  z-index: 1;
+  filter: blur(20px);
+}
+
+@media screen and (min-width: 3000px) {
+  .headingContainer {
+    font-size: 5.5rem;
+    top: 27%;
+  }
+  .headingContainer h2 {
+    font-weight: bold;
+    font-size: 9rem;
+  }
+
+  .descriptionContainer {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .headingContainer {
+    font-size: 2.25rem;
+    top: 27%;
+  }
+  .headingContainer h2 {
+    font-weight: bold;
+    font-size: 3.75rem;
+  }
+
+  .descriptionContainer {
+    font-size: 2.25rem;
+  }
+}

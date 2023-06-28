@@ -1,0 +1,49 @@
+.buyButtonContainer {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  padding: 4rem;
+  padding-bottom: 2rem;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0) 0%,
+    transparent 90%
+  );
+  width: 100%;
+  align-content: center;
+}
+
+.buyButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  color: white;
+  background: #0d3fc4;
+  border-radius: 2px;
+  font-family: 'DINOT', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0 auto;
+  transition: background 0.15s linear;
+}
+
+.buyButton:hover {
+  background: #1a1e9d;
+}
+
+.buyButton:active {
+  outline: 1px solid #9fd8f9;
+}
+
+.buyButton svg {
+  width: 25px;
+  margin-right: 1rem;
+}
+
+.buyButton svg path {
+  fill: #9fd8f9;
+}

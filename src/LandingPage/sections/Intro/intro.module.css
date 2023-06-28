@@ -1,0 +1,132 @@
+.section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-height: 100vh;
+  width: 100%;
+}
+
+.firstSection__bg {
+  max-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+}
+
+.firstSection__bg__overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top, black 0%, transparent 15%);
+}
+
+.firstSection__content {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -75%, 0);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1700px;
+}
+
+.firstSection__content img {
+  max-width: 365px;
+}
+
+.firstSection__content p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+  max-width: 550px;
+}
+
+.firstSection__footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.8rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  max-width: calc(100% - 6rem);
+}
+.firstSection__footer img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.firstSection__footer > img {
+  max-width: 68px;
+}
+
+.firstSection__footer__lucasFilmContainer {
+  display: flex;
+  align-items: baseline;
+}
+
+.firstSection__footer__lucasFilmContainer img:first-child {
+  margin-left: 1.5rem;
+  max-width: 104px;
+}
+
+.firstSection__footer__lucasFilmContainer img:last-child {
+  margin-left: 1rem;
+  max-width: 64px;
+}
+
+@media screen and (min-width: 3000px) {
+  .firstSection__content {
+    max-width: 85%;
+  }
+
+  .firstSection__content img {
+    max-width: 700px;
+  }
+
+  .firstSection__content p {
+    font-size: 6rem;
+    max-width: 1100px;
+  }
+
+  .firstSection__footer > img {
+    max-width: 130px;
+  }
+
+  .firstSection__footer__lucasFilmContainer {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .firstSection__footer__lucasFilmContainer img:first-child {
+    margin-left: 1.5rem;
+    max-width: 254px;
+  }
+
+  .firstSection__footer__lucasFilmContainer img:last-child {
+    margin-left: 1rem;
+    max-width: 160px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .firstSection__content {
+    max-width: 1200px;
+  }
+
+  .firstSection__content img {
+    max-width: 300px;
+  }
+
+  .firstSection__content p {
+    font-size: 2.5rem;
+    max-width: 450px;
+  }
+}

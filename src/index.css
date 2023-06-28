@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'DINOT';
+  src: url(/arquivos/DINOT-Bold.woff.css);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'DINOT-Cond';
+  src: url(/arquivos/DINOT-Cond.woff.css);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'DINOT';
+  src: url(/arquivos/DINOT.woff.css);
+  font-weight: normal;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+section {
+  overflow: hidden;
+}
+
+.scene {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: black;
+  color: white;
+  font-family: 'DINOT';
+}
+
+.section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  max-height: 100vh;
+  width: 100%;
+}
