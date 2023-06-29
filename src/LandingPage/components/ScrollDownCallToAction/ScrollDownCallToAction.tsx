@@ -5,6 +5,7 @@ import { gsap } from 'gsap';
 // import { Container } from './styles';
 const isMobile = window.matchMedia('(max-width: 1023px)').matches;
 
+
 const ScrollDownCallToAction: React.FC = () => {
   useLayoutEffect(() => {
     const tl = gsap.timeline();

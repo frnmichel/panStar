@@ -1,8 +1,8 @@
-import { useState, createContext, useLayoutEffect, ReactNode } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useState, createContext, useLayoutEffect, ReactNode } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import { IRefDependencies } from '../types';
+import { IRefDependencies } from "../types";
 
 interface IProps {
   refDependencies: IRefDependencies;
@@ -37,8 +37,8 @@ const MasterTimelineContextProvider = ({
       const mm = gsap.matchMedia();
       mm.add(
         {
-          isDesktop: '(min-width: 1024px)',
-          isMobile: '(max-width: 1023px)',
+          isDesktop: "(min-width: 1024px)",
+          isMobile: "(max-width: 1023px)",
         },
         (context) => {
           const { isMobile, isDesktop } = context.conditions as gsap.Conditions;
@@ -46,15 +46,15 @@ const MasterTimelineContextProvider = ({
           const master = gsap.timeline({
             scrollTrigger: {
               trigger: sceneRef.current,
-              start: 'top top',
+              start: "top top",
               end: `bottom+=5000 top`,
-              markers: true,
+              markers: false,
               scrub: 2.5,
               pin: true,
             },
           });
 
-          master.set(['.section:not(.firstSection)'], {
+          master.set([".section:not(.firstSection)"], {
             autoAlpha: 0,
           });
 
